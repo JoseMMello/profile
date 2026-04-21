@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio de José Martins — Desenvolvedor de Software." />
-    <title>José Martins | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de José Martins — Senior Frontend Engineer com 8+ anos de experiência em e-commerce, fintech e saúde."
+    />
+    <title>José Martins | Senior Frontend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,13 +18,13 @@
   </head>
   <body>
 
-    <!-- PARALLAX HERO -->
+    <!-- ── PARALLAX HERO ──────────────────────────────────────────────── -->
     <section class="hero" id="hero">
       <div class="parallax-bg" id="parallaxBg">
-        <div class="pixel-grid" id="pixelGrid"></div>
-        <div class="parallax-layer layer-1" id="layer1"></div>
-        <div class="parallax-layer layer-2" id="layer2"></div>
-        <div class="parallax-layer layer-3" id="layer3"></div>
+        <div class="pixel-grid"></div>
+        <div class="parallax-layer" id="layer1"></div>
+        <div class="parallax-layer" id="layer2"></div>
+        <div class="parallax-layer" id="layer3"></div>
         <div class="scanline"></div>
       </div>
 
@@ -31,13 +34,31 @@
           <span class="name-line">JOSÉ</span>
           <span class="name-line accent-text">MARTINS</span>
         </h1>
-        <p class="hero-role"><span class="blink">_</span> Desenvolvedor de Software</p>
+        <p class="hero-role"><span class="blink">_</span> Senior Frontend Engineer</p>
         <p class="hero-summary">
-          Transformo ideias em produtos digitais sólidos.<br />
-          Código limpo. Interfaces que funcionam. Resultados reais.
+          8+ anos construindo aplicações web de alta performance.<br />
+          E-commerce · Fintech · Healthtech · AI Integration.
         </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value">+183%</span>
+            <span class="hero-stat-label">Core Web Vitals</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">10M+</span>
+            <span class="hero-stat-label">Events / week</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">$1.2M</span>
+            <span class="hero-stat-label">Revenue impact</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">500K+</span>
+            <span class="hero-stat-label">Active users</span>
+          </div>
+        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="resume.pdf" download>
+          <a class="btn btn-primary" href="José_Martins_-_Senior_Frontend_Engineer.pdf" download>
             <span>[ BAIXAR RESUME ]</span>
           </a>
           <a class="btn btn-secondary" href="mailto:martins.josemn@gmail.com">
@@ -52,48 +73,42 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ── ABOUT ──────────────────────────────────────────────────────── -->
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">&gt; about.md</span>
-          <h2 class="section-title">SOBRE MIM</h2>
+          <h2 class="section-title">ABOUT</h2>
         </div>
         <div class="about-grid">
           <div class="about-photo-wrap">
-            <div class="photo-frame">
-              <img src="photo.png" alt="Foto de José Martins" class="profile-photo" />
-              <div class="photo-glitch" aria-hidden="true"></div>
-            </div>
+            <img src="photo.png" alt="José Martins" class="profile-photo-round" />
             <div class="photo-info">
               <span class="status-dot"></span>
-              <span class="status-text">Disponível para oportunidades</span>
+              <span class="status-text">Open to opportunities</span>
             </div>
           </div>
           <div class="about-text">
             <p>
-              Desenvolvedor apaixonado por tecnologia com experiência em construir
-              soluções digitais de ponta a ponta. Foco em performance, qualidade
-              de código e experiência do usuário.
+              Senior Frontend Engineer with <strong>8+ years</strong> building high-performance,
+              scalable web applications across e-commerce, fintech, and healthcare.
             </p>
             <p>
-              Acredito que bom software é aquele que resolve problemas reais de
-              forma elegante — sem excessos, sem gambiarras.
+              I focus on real impact: clean architecture, strong accessibility, and data-driven
+              features — including AI-powered solutions using GPT-4 and Claude API in production.
             </p>
             <dl class="quick-stats">
               <div class="stat">
-                <dt>LOCALIZAÇÃO</dt>
-                <dd>Brasil</dd>
+                <dt>LOCATION</dt>
+                <dd>Brazil · Brasília, DF</dd>
               </div>
               <div class="stat">
-                <dt>FOCO</dt>
-                <dd>Full Stack / Software</dd>
+                <dt>LANGUAGES</dt>
+                <dd>Portuguese (native) · English (B2)</dd>
               </div>
               <div class="stat">
                 <dt>EMAIL</dt>
-                <dd>
-                  <a href="mailto:martins.josemn@gmail.com">martins.josemn@gmail.com</a>
-                </dd>
+                <dd><a href="mailto:martins.josemn@gmail.com">martins.josemn@gmail.com</a></dd>
               </div>
             </dl>
           </div>
@@ -101,7 +116,7 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ── SKILLS ─────────────────────────────────────────────────────── -->
     <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-header">
@@ -109,49 +124,72 @@
           <h2 class="section-title">HABILIDADES</h2>
         </div>
         <div class="skills-grid">
-          <div class="skill-category">
+          <div class="skill-category cat-green">
             <h3 class="skill-cat-title">FRONTEND</h3>
             <ul class="skill-list">
-              <li>HTML / CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>TypeScript</li>
+              <li>React · Next.js · Remix</li>
+              <li>TypeScript · JavaScript (ES6+)</li>
+              <li>Tailwind CSS · Styled Components</li>
+              <li>Redux · Recoil · React Query</li>
+              <li>Storybook · Component Libraries</li>
             </ul>
           </div>
-          <div class="skill-category">
-            <h3 class="skill-cat-title">BACKEND</h3>
+          <div class="skill-category cat-purple">
+            <h3 class="skill-cat-title">PERFORMANCE &amp; QA</h3>
             <ul class="skill-list">
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>REST APIs</li>
-              <li>SQL</li>
+              <li>Core Web Vitals (LCP, FID, CLS)</li>
+              <li>Bundle Optimization · CDN</li>
+              <li>Vitest · Jest · Cypress</li>
+              <li>Accessibility (WCAG 2.1 AA)</li>
+              <li>Lighthouse CI</li>
             </ul>
           </div>
-          <div class="skill-category">
-            <h3 class="skill-cat-title">TOOLS</h3>
+          <div class="skill-category cat-red">
+            <h3 class="skill-cat-title">ARQUITETURA</h3>
             <ul class="skill-list">
-              <li>Git / GitHub</li>
-              <li>Docker</li>
-              <li>Linux</li>
-              <li>CI/CD</li>
+              <li>Clean Architecture · SOLID</li>
+              <li>Node.js · GraphQL · REST APIs</li>
+              <li>WebSockets · Microservices</li>
+              <li>Redis · PostgreSQL</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+          <div class="skill-category cat-cyan">
+            <h3 class="skill-cat-title">AI &amp; ML</h3>
+            <ul class="skill-list">
+              <li>GPT-4 API · Claude API</li>
+              <li>RAG · Semantic Search</li>
+              <li>LLM Prompt Engineering</li>
+              <li>Streaming Responses</li>
+              <li>Embeddings</li>
+            </ul>
+          </div>
+          <div class="skill-category cat-orange">
+            <h3 class="skill-cat-title">DEVOPS &amp; TOOLS</h3>
+            <ul class="skill-list">
+              <li>Git · GitHub Actions · GitLab CI</li>
+              <li>AWS (Lambda, S3, CloudFront)</li>
+              <li>Docker · Datadog</li>
+              <li>Vite · Webpack · Figma</li>
+              <li>Monitoring &amp; Observability</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PARALLAX DIVIDER -->
-    <div class="parallax-divider" id="parallaxDivider">
+    <!-- ── PARALLAX DIVIDER ───────────────────────────────────────────── -->
+    <div class="parallax-divider">
       <div class="divider-layer" id="dividerLayer"></div>
       <div class="divider-text">
-        <span class="marquee-track" id="marqueeTrack">
-          &lt;CÓDIGO&nbsp;&nbsp;//&nbsp;&nbsp;DESIGN&nbsp;&nbsp;//&nbsp;&nbsp;INOVAÇÃO&nbsp;&nbsp;//&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;//&nbsp;&nbsp;QUALIDADE&nbsp;&nbsp;//&nbsp;&nbsp;&gt;&nbsp;&nbsp;
-          &lt;CÓDIGO&nbsp;&nbsp;//&nbsp;&nbsp;DESIGN&nbsp;&nbsp;//&nbsp;&nbsp;INOVAÇÃO&nbsp;&nbsp;//&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;//&nbsp;&nbsp;QUALIDADE&nbsp;&nbsp;//&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+        <span class="marquee-track">
+          REACT&nbsp;&nbsp;//&nbsp;&nbsp;TYPESCRIPT&nbsp;&nbsp;//&nbsp;&nbsp;NEXT.JS&nbsp;&nbsp;//&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;//&nbsp;&nbsp;CLEAN ARCH&nbsp;&nbsp;//&nbsp;&nbsp;AI INTEGRATION&nbsp;&nbsp;//&nbsp;&nbsp;ACCESSIBILITY&nbsp;&nbsp;//&nbsp;&nbsp;
+          REACT&nbsp;&nbsp;//&nbsp;&nbsp;TYPESCRIPT&nbsp;&nbsp;//&nbsp;&nbsp;NEXT.JS&nbsp;&nbsp;//&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;//&nbsp;&nbsp;CLEAN ARCH&nbsp;&nbsp;//&nbsp;&nbsp;AI INTEGRATION&nbsp;&nbsp;//&nbsp;&nbsp;ACCESSIBILITY&nbsp;&nbsp;//&nbsp;&nbsp;
         </span>
       </div>
     </div>
 
-    <!-- EXPERIENCE -->
+    <!-- ── EXPERIENCE ─────────────────────────────────────────────────── -->
     <section class="section experience-section" id="experience">
       <div class="container">
         <div class="section-header">
@@ -159,34 +197,136 @@
           <h2 class="section-title">EXPERIÊNCIA</h2>
         </div>
         <div class="timeline">
+
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker marker-green"></div>
             <div class="timeline-content">
-              <span class="timeline-date">2023 — presente</span>
-              <h3 class="timeline-role">Desenvolvedor de Software</h3>
-              <p class="timeline-desc">
-                Desenvolvimento e manutenção de aplicações web. Colaboração com
-                times multidisciplinares para entrega de produtos digitais de
-                alto impacto.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Fev 2025 — Presente</span>
+                <span class="timeline-company">Swift · E-commerce</span>
+              </div>
+              <h3 class="timeline-role">Senior Frontend Engineer</h3>
+              <ul class="timeline-bullets">
+                <li>Core Web Vitals de 30 → 85 <strong>(+183%)</strong> via bundle splitting, lazy loading e CDN — contribuindo com <strong>+30% conversão</strong> e <strong>$1.2M de receita adicional/ano</strong></li>
+                <li>Feature de cashback com React Server Components + WebSocket em tempo real, servindo <strong>500K+ usuários ativos</strong> com 99.8% uptime</li>
+                <li>Chatbot de suporte com <strong>RAG + streaming LLM</strong>, reduzindo volume de suporte em 40% e melhorando first-contact resolution em 65%</li>
+                <li>Acessibilidade de 60 → <strong>100</strong> (WCAG 2.1 AA) — expandindo mercado em 15%</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React Server Components</span><span>TypeScript</span><span>Remix</span>
+                <span>Tailwind CSS</span><span>RAG</span><span>OpenAI API</span><span>AWS</span>
+              </div>
             </div>
           </div>
+
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker marker-purple"></div>
             <div class="timeline-content">
-              <span class="timeline-date">2021 — 2023</span>
-              <h3 class="timeline-role">Desenvolvedor Junior</h3>
-              <p class="timeline-desc">
-                Criação de interfaces responsivas e integração com APIs REST.
-                Foco em performance e boas práticas de código.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2023 — Mar 2025</span>
+                <span class="timeline-company">BBTS · Banco do Brasil Technology</span>
+              </div>
+              <h3 class="timeline-role">Senior Frontend Engineer</h3>
+              <ul class="timeline-bullets">
+                <li>Plataforma de mensageria enterprise processando <strong>10M+ emails/SMS semanais</strong>, 99.9% uptime, 2.000+ usuários internos</li>
+                <li>Arquitetura modular com Clean Architecture + DI, reduzindo deploy time em <strong>45%</strong> e bugs em <strong>60%</strong></li>
+                <li>Design system com compound components + Storybook, garantindo consistência em <strong>5+ aplicações</strong></li>
+                <li>Estratégia de testes com ~90% de cobertura (Vitest + Cypress), reduzindo incidentes em <strong>65%</strong></li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React</span><span>TypeScript</span><span>Recoil</span>
+                <span>Clean Architecture</span><span>Cypress</span><span>Styled Components</span><span>Datadog</span>
+              </div>
             </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker marker-red"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Out 2020 — Fev 2023</span>
+                <span class="timeline-company">DrHoje · Telemedicina</span>
+              </div>
+              <h3 class="timeline-role">Senior Fullstack Developer</h3>
+              <ul class="timeline-bullets">
+                <li>Plataforma de telemedicina em tempo real com WebRTC, suportando <strong>10K+ consultas/dia</strong> — NPS de 62 → 78</li>
+                <li>Sistema de transcrição com <strong>GPT-4 API</strong> para preenchimento automático de fichas médicas, acelerando documentação em 40%</li>
+                <li>Dashboard de monitoramento com WebSocket + Redis, reduzindo setup de consultas em 25%</li>
+                <li>Serviço de notificação com Twilio IVR/SMS — no-show de 18% → <strong>13%</strong></li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React</span><span>Node.js</span><span>GraphQL</span>
+                <span>WebRTC</span><span>Socket.io</span><span>GPT-4 API</span><span>Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker marker-cyan"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Dez 2021 — Dez 2022</span>
+                <span class="timeline-company">ENGIE · Energy Services</span>
+              </div>
+              <h3 class="timeline-role">Frontend Engineer</h3>
+              <ul class="timeline-bullets">
+                <li>Migração de frontend ASP legado para React/TypeScript SPA — débito técnico <strong>-60%</strong>, load time <strong>-45%</strong></li>
+                <li>Listas virtualizadas com react-window para datasets 10K+ linhas, performance de renderização <strong>+70%</strong></li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React</span><span>TypeScript</span><span>Clean Architecture</span>
+                <span>Webpack</span><span>react-window</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker marker-orange"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Out 2020 — Dez 2021</span>
+                <span class="timeline-company">Keeggo · Educational SaaS</span>
+              </div>
+              <h3 class="timeline-role">Frontend Engineer</h3>
+              <ul class="timeline-bullets">
+                <li>Features escaláveis para plataforma SaaS com React, TypeScript e Clean Architecture</li>
+                <li>Cobertura de testes de <strong>85%</strong>, bugs em produção <strong>-40%</strong>, 95% sprint completion rate</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React</span><span>TypeScript</span><span>Jest</span><span>Cypress</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ──────────────────────────────────────────────────── -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&gt; education.json</span>
+          <h2 class="section-title">EDUCAÇÃO</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <span class="edu-badge">Em andamento</span>
+            <h3 class="edu-degree">MBA em Engenharia de Inteligência Artificial</h3>
+            <p class="edu-school">FullCycle</p>
+            <p class="edu-year">2026 — Presente</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-badge edu-badge-done">Concluído</span>
+            <h3 class="edu-degree">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+            <p class="edu-school">IESB — Brasil</p>
+            <p class="edu-year">2018 — 2022</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- LINKS / CONTACT -->
+    <!-- ── CONTACT ────────────────────────────────────────────────────── -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="section-header">
@@ -194,40 +334,32 @@
           <h2 class="section-title">CONECTE-SE</h2>
         </div>
         <div class="contact-grid">
-          <a
-            class="contact-card"
-            href="https://www.linkedin.com/in/jmartinsmn/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a class="contact-card" href="https://www.linkedin.com/in/jmartinsmn/" target="_blank" rel="noreferrer">
             <span class="contact-icon">in</span>
             <span class="contact-label">LinkedIn</span>
             <span class="contact-handle">/in/jmartinsmn</span>
           </a>
-          <a
-            class="contact-card"
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a class="contact-card" href="https://github.com/JoseMMello" target="_blank" rel="noreferrer">
             <span class="contact-icon">&lt;/&gt;</span>
             <span class="contact-label">GitHub</span>
-            <span class="contact-handle">@jmartinsmn</span>
+            <span class="contact-handle">JoseMMello</span>
           </a>
-          <a
-            class="contact-card"
-            href="mailto:martins.josemn@gmail.com"
-          >
+          <a class="contact-card" href="mailto:martins.josemn@gmail.com">
             <span class="contact-icon">@</span>
             <span class="contact-label">Email</span>
             <span class="contact-handle">martins.josemn@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+5561981772154">
+            <span class="contact-icon">#</span>
+            <span class="contact-label">Telefone</span>
+            <span class="contact-handle">+55 61 9 8177-2154</span>
           </a>
         </div>
       </div>
     </section>
 
     <footer class="site-footer">
-      <p>&copy; 2026 José Martins — <span class="accent-text">Built with code</span></p>
+      <p>&copy; 2026 José Martins — <span class="accent-text">Senior Frontend Engineer</span></p>
     </footer>
 
     <script src="main.js"></script>
