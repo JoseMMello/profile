@@ -3,92 +3,233 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portfolio pessoal com apresentacao profissional e download de resume."
-    />
-    <title>Seu Nome | Portfolio</title>
+    <meta name="description" content="Portfolio de José Martins — Desenvolvedor de Software." />
+    <title>José Martins | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell">
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow">Portfolio pessoal</p>
-          <h1 id="intro-title">Seu Nome</h1>
-          <p class="role">Desenvolvedor Front-end</p>
-          <p class="summary">
-            Crio interfaces digitais claras, responsivas e bem cuidadas, com
-            foco em experiencia do usuario, performance e codigo sustentavel.
-          </p>
 
-          <div class="actions" aria-label="Acoes principais">
-            <a class="button primary" href="resume.pdf" download>
-              Baixar resume
-            </a>
-            <a class="button secondary" href="mailto:seuemail@email.com">
-              Entrar em contato
-            </a>
+    <!-- PARALLAX HERO -->
+    <section class="hero" id="hero">
+      <div class="parallax-bg" id="parallaxBg">
+        <div class="pixel-grid" id="pixelGrid"></div>
+        <div class="parallax-layer layer-1" id="layer1"></div>
+        <div class="parallax-layer layer-2" id="layer2"></div>
+        <div class="parallax-layer layer-3" id="layer3"></div>
+        <div class="scanline"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">&gt; portfolio.exe</p>
+        <h1 class="hero-title">
+          <span class="name-line">JOSÉ</span>
+          <span class="name-line accent-text">MARTINS</span>
+        </h1>
+        <p class="hero-role"><span class="blink">_</span> Desenvolvedor de Software</p>
+        <p class="hero-summary">
+          Transformo ideias em produtos digitais sólidos.<br />
+          Código limpo. Interfaces que funcionam. Resultados reais.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="resume.pdf" download>
+            <span>[ BAIXAR RESUME ]</span>
+          </a>
+          <a class="btn btn-secondary" href="mailto:martins.josemn@gmail.com">
+            <span>[ CONTATO ]</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="pixel-arrow"></span>
+        <span class="scroll-label">SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&gt; about.md</span>
+          <h2 class="section-title">SOBRE MIM</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <div class="photo-frame">
+              <img src="photo.png" alt="Foto de José Martins" class="profile-photo" />
+              <div class="photo-glitch" aria-hidden="true"></div>
+            </div>
+            <div class="photo-info">
+              <span class="status-dot"></span>
+              <span class="status-text">Disponível para oportunidades</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              Desenvolvedor apaixonado por tecnologia com experiência em construir
+              soluções digitais de ponta a ponta. Foco em performance, qualidade
+              de código e experiência do usuário.
+            </p>
+            <p>
+              Acredito que bom software é aquele que resolve problemas reais de
+              forma elegante — sem excessos, sem gambiarras.
+            </p>
+            <dl class="quick-stats">
+              <div class="stat">
+                <dt>LOCALIZAÇÃO</dt>
+                <dd>Brasil</dd>
+              </div>
+              <div class="stat">
+                <dt>FOCO</dt>
+                <dd>Full Stack / Software</dd>
+              </div>
+              <div class="stat">
+                <dt>EMAIL</dt>
+                <dd>
+                  <a href="mailto:martins.josemn@gmail.com">martins.josemn@gmail.com</a>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
+      </div>
+    </section>
 
-        <aside class="profile-panel" aria-label="Resumo profissional">
-          <div class="avatar" aria-hidden="true">SN</div>
-          <dl class="quick-facts">
-            <div>
-              <dt>Local</dt>
-              <dd>Brasil</dd>
-            </div>
-            <div>
-              <dt>Foco</dt>
-              <dd>Web, UI, React</dd>
-            </div>
-            <div>
-              <dt>Status</dt>
-              <dd>Disponivel para oportunidades</dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
-
-      <section class="content-grid" aria-label="Detalhes profissionais">
-        <article>
-          <h2>Sobre</h2>
-          <p>
-            Sou um profissional de tecnologia interessado em transformar ideias
-            em produtos digitais simples de usar, bonitos e confiaveis.
-          </p>
-        </article>
-
-        <article>
-          <h2>Skills</h2>
-          <ul class="tags" aria-label="Lista de habilidades">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Git</li>
-          </ul>
-        </article>
-
-        <article>
-          <h2>Links</h2>
-          <div class="link-list">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&gt; skills.json</span>
+          <h2 class="section-title">HABILIDADES</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-cat-title">FRONTEND</h3>
+            <ul class="skill-list">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>TypeScript</li>
+            </ul>
           </div>
-        </article>
-      </section>
-    </main>
+          <div class="skill-category">
+            <h3 class="skill-cat-title">BACKEND</h3>
+            <ul class="skill-list">
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>REST APIs</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-title">TOOLS</h3>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>Linux</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARALLAX DIVIDER -->
+    <div class="parallax-divider" id="parallaxDivider">
+      <div class="divider-layer" id="dividerLayer"></div>
+      <div class="divider-text">
+        <span class="marquee-track" id="marqueeTrack">
+          &lt;CÓDIGO&nbsp;&nbsp;//&nbsp;&nbsp;DESIGN&nbsp;&nbsp;//&nbsp;&nbsp;INOVAÇÃO&nbsp;&nbsp;//&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;//&nbsp;&nbsp;QUALIDADE&nbsp;&nbsp;//&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+          &lt;CÓDIGO&nbsp;&nbsp;//&nbsp;&nbsp;DESIGN&nbsp;&nbsp;//&nbsp;&nbsp;INOVAÇÃO&nbsp;&nbsp;//&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;//&nbsp;&nbsp;QUALIDADE&nbsp;&nbsp;//&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+        </span>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&gt; experience.log</span>
+          <h2 class="section-title">EXPERIÊNCIA</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 — presente</span>
+              <h3 class="timeline-role">Desenvolvedor de Software</h3>
+              <p class="timeline-desc">
+                Desenvolvimento e manutenção de aplicações web. Colaboração com
+                times multidisciplinares para entrega de produtos digitais de
+                alto impacto.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 — 2023</span>
+              <h3 class="timeline-role">Desenvolvedor Junior</h3>
+              <p class="timeline-desc">
+                Criação de interfaces responsivas e integração com APIs REST.
+                Foco em performance e boas práticas de código.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS / CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&gt; connect.sh</span>
+          <h2 class="section-title">CONECTE-SE</h2>
+        </div>
+        <div class="contact-grid">
+          <a
+            class="contact-card"
+            href="https://www.linkedin.com/in/jmartinsmn/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="contact-icon">in</span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-handle">/in/jmartinsmn</span>
+          </a>
+          <a
+            class="contact-card"
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="contact-icon">&lt;/&gt;</span>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-handle">@jmartinsmn</span>
+          </a>
+          <a
+            class="contact-card"
+            href="mailto:martins.josemn@gmail.com"
+          >
+            <span class="contact-icon">@</span>
+            <span class="contact-label">Email</span>
+            <span class="contact-handle">martins.josemn@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 José Martins — <span class="accent-text">Built with code</span></p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
